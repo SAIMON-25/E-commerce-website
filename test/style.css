@@ -1,0 +1,30 @@
+/* Form Card Styling */
+.card {
+  border-radius: 10px;
+}
+
+.card-title {
+  color: #333;
+  font-weight: 600;
+}
+
+input, textarea, select {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+button.btn-primary {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
