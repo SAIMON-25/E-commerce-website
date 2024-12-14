@@ -54,6 +54,7 @@ if (isset($_POST['register'])) {
     $mobileno = $_POST['mobile'];
     $image = $_FILES['user_image']['name'];
     $tmp_image = $_FILES['user_image']['tmp_name'];
+    $ip_address = get_client_ip();
 
     // Check if email already exists
     $sql = "SELECT * FROM user WHERE user_email='$email'";
@@ -80,8 +81,8 @@ if (isset($_POST['register'])) {
         move_uploaded_file($tmp_image, "./user_image/$image");
 
         // Insert data into database
-        $sql = "INSERT INTO user (user_name, user_email, user_password, user_image, user_mobile) 
-                VALUES ('$name', '$email', '$password', '$image', '$mobileno')";
+        $sql = "INSERT INTO user (ip_address,user_name, user_email, user_password, user_image, user_mobile) 
+                VALUES ('$ip_address','$name', '$email', '$password', '$image', '$mobileno')";
         $result = mysqli_query($con, $sql);
         if ($result) {
             $_SESSION['message'] = "Registration successful! Please log in.";

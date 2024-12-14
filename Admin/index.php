@@ -26,8 +26,8 @@
       <nav class="col-md-3 col-lg-2 d-md-block sidebar d-flex flex-column p-3 animated-sidebar">
         <!-- Profile Section -->
         <div class="profile-section mb-4 text-center">
-          <img src="https://via.placeholder.com/100" alt="Admin Profile" class="rounded-circle profile-img mb-2">
-          <h5>Admin Name</h5>
+          <img src="..\Admin\product_images\IMG_4197.jpg" class="rounded-circle" alt="User Image" style="width: 100px; height: 100px;">
+          <h5>Saimanul hoque</h5>
           <p class="welcome-text">Welcome back!</p>
         </div>
 
